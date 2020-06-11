@@ -9,7 +9,7 @@ const initAlgoliaSearch = () => {
         displayKey: 'name',
         templates: {
           suggestion: function (suggestion) {
-            return suggestion._highlightResult.name.value;
+            return `${suggestion._highlightResult.name.value} lives in ${suggestion._highlightResult.location.value} and uses ${suggestion._highlightResult.move.value}`;
           }
         }
       }
