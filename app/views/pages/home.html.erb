@@ -4,7 +4,7 @@
         <div class="col-sm-6 col-sm-offset-3">
           <form action="#" class="form">
             <h3>Basic example</h3>
-            <input class="form-control" id="search-input" name="contacts" type="text" placeholder='Search Pokemon by name, location, or move' />
+            <input class="form-control" id="search-input" name="contacts" type="text" placeholder='Search Pokemon by name, location, or move' data-algolia-id = "<%= ENV["ALGOLIA_ID"] %>" data-algolia-search-key = "<%= ENV["ALGOLIA_SEARCH_KEY"] %>"/>
           </form>
         </div>
       </div>
